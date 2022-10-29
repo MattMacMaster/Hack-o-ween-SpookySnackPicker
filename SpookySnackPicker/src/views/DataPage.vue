@@ -23,15 +23,13 @@ import data from '../assets/csvjson.json';
 
 export default defineComponent({
   setup() {
-    const searchValue = ref("boston");
-
-
+    const searchValue = ref("");
     const headers: Header[] = [
       { text: "Name", value: "name" },
       { text: "Chocolatey?", value: "chocolate", sortable: true },
       { text: "Fruity?", value: "fruit", sortable: true },
       { text: "Caramely?", value: "caramel", sortable: true },
-      { text: "Peanuty or Almondy?", value: "peanutalmond", sortable: true },
+      { text: "Peanuty or Almondy?", value: "peanutyalmondy", sortable: true },
       { text: "Nougaty?", value: "nougat", sortable: true },
       { text: "Crisped Ricey?", value: "crispedrice", sortable: true },
       { text: "Hard?", value: "hard", sortable: true },
@@ -50,7 +48,7 @@ export default defineComponent({
       "chocolate": data[i].chocolate,
       "fruit":data[i].fruity,
       "caramel": data[i].caramel,
-      "peanutalmod":data[i].peanutyalmondy,
+      "peanutyalmondy":data[i].peanutyalmondy,
       "nougat":data[i].nougat,
       "crispedrice":data[i].crispedricewafer,
       "hard":data[i].hard,
