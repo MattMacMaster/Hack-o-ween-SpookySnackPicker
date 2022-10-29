@@ -1,5 +1,16 @@
 <template>
-    <div class="brazil">
-        <h1>VERY BASED ABOUT PAGE</h1>
+    <div class="about">
+        <h1>About Us and SpookySnack Picker</h1>
+        <div>
+            <p></p>
+        </div>
     </div>
 </template>
+
+<style scoped>
+    h1 {
+        text-align: center;
+        background-color: white;
+        
+    }
+</style>
