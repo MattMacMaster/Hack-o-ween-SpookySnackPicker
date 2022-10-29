@@ -64,4 +64,8 @@ export default defineComponent({
     color: blue;
     text-decoration-line: underline;
   }
+
+  .header-text {
+    font-weight: bold;
+  }
 </style>
