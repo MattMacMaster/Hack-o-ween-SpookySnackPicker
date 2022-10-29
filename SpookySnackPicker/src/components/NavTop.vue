@@ -17,6 +17,10 @@
     
 <style lang="css">
 body {margin:0;}
+@font-face {
+  font-family: NavFonts;
+  src: url(../assets/feast-of-flesh-bb/fofbb_ital.ttf);
+}
 
 ul {
   list-style-type: none;
@@ -29,11 +33,13 @@ ul {
   top: 0;
   left:0%;
   width: 100%;
-  font-size: larger;
+  font-size:large;
   z-index: 1;
+  font-family: NavFonts;
 }
 ul li {
-  margin-left:11%;
+  margin-left:1%;
+  margin-right: 13%;
   display: block;
   position: relative;
 }
@@ -70,4 +76,6 @@ img {
 #nonimg {
   margin-top: 10px;
 }
+
+
 </style> 

@@ -39,7 +39,7 @@ export default defineComponent({
 });
 </script>
 
-<style>
+<style scoped>
   .container {
     z-index: 0;
     box-shadow: 8px 8px rgb(0 0 0 / 0.3);
