@@ -1,7 +1,7 @@
 <template>
     <div id="app">
       <footer class="footer-content">
-        <p>Copyright &copy;2022 <a href="https://github.com/MattMacMaster" target="_blank">MortyAllen</a> and <a href="https://github.com/fatboychummy" target="_blank">FatBoyChummy</a></p>
+        <p>Copyright &copy;2022 <a href="https://github.com/MattMacMaster" target="_blank">MortyAllen</a> and <a href="https://github.com/fatboychummy" target="_blank">Fatboychummy</a></p>
       </footer>
          
     </div>

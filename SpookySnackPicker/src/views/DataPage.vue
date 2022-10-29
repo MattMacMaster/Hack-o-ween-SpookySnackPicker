@@ -1,6 +1,6 @@
 <template>
     <div id="app">
-      <h1>BIG Main Page</h1>
+      <h1>BIG DATAAAAAAAAAAA Page</h1>
          
     </div>
 
