@@ -1,12 +1,10 @@
 <script setup>
-  import CandySetVue from '../components/Bowl/CandySet.vue';
+  import BowlVue from '../components/Bowl/Bowl.vue';
 </script>
 
 <template>
     <div id="app">
-      <h1>BIG Main Page</h1>
-         
-      <CandySetVue />
+      <BowlVue/>
     </div>
 
 </template>
