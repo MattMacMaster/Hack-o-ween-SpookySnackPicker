@@ -47,7 +47,9 @@ li a:hover:not(.active) {
   background-color: #04AA6D;
 }
 img {
-    width: 2em;
+    padding: 0;
+    margin: 0;
+    width: 1em;
     margin: 0;
 }
 
