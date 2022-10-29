@@ -2,8 +2,8 @@
     <div id="app">
         <ul>
             <li><a href="default.asp"><img src="./icons/candy-jar.png"></a></li>
-            <li><a id="active">SpookySnackPicker</a></li>
-            <li><a href="about.asp">About</a></li>
+            <li><a id="nonimg">SpookySnack Picker</a></li>
+            <li><a id="nonimg" href="about.asp">About</a></li>
         </ul>   
     </div>
 
@@ -28,6 +28,11 @@ ul {
   top: 0;
   left:0%;
   width: 100%;
+  font-size: larger;
+}
+ul li {
+  display: block;
+  position: relative;
 }
 
 li {
@@ -49,12 +54,15 @@ li a:hover:not(.active) {
 img {
     padding: 0;
     margin: 0;
-    width: 1em;
+    height: 3em;
     margin: 0;
+    margin-right: 5px;
 }
 
 active {
     background-color: #d47800;
 }
-
+#nonimg {
+  margin-top: 15px;
+}
 </style> 

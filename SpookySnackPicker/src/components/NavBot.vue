@@ -1,10 +1,9 @@
 <template>
     <div id="app">
-        <ul>
-            <li><a href="default.asp"><img src="./icons/candy-jar.png"></a></li>
-            <li><a id="active">SpookySnackPicker</a></li>
-            <li><a href="about.asp">About</a></li>
-        </ul>   
+      <footer class="footer-content">
+        <p>Copyright &copy;2022 <a href="https://github.com/MattMacMaster" target="_blank">MortyAllen</a> and <a href="https://github.com/fatboychummy" target="_blank">FatBoyChummy</a></p>
+      </footer>
+         
     </div>
 
 </template>
@@ -15,50 +14,29 @@
 </script>
     
 <style lang="css">
-body {margin:0;}
 
-ul {
-  display: inline-block;
-
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  position: sticky;
-  position: fixed;
-  bottom: 0;
-  left:0%;
-  width: 100%;
+  footer{
+    font-size: larger;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #333;
+    height: auto;
+    width: 100vw;
+    color: #fff;
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    /* Height of the footer*/
+    height: 60px;
+    
 }
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-weight:bolder;
-}
-
-li a:hover:not(.active) {
-  background-color: #d47800;
-}
-img {
-    padding: 0;
-    margin: 0;
-    width: 1em;
-    margin: 0;
-}
-
-active {
-    background-color: #d47800;
-}
-#app {
-  text-align: center;
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 </style> 

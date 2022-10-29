@@ -1,5 +1,6 @@
 <script setup>
 import NavTop from './components/NavTop.vue'
+import NavBot from './components/NavBot.vue'
 </script>
 
 
@@ -10,7 +11,7 @@ import NavTop from './components/NavTop.vue'
     <main>
     
     </main>
-
+    <NavBot />
 </template>
 
 
