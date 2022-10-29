@@ -18,14 +18,15 @@
 body {margin:0;}
 
 ul {
-  list-style-type: none;
+  display: inline-block;
+
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #333;
   position: sticky;
   position: fixed;
-  top: 0;
+  bottom: 0;
   left:0%;
   width: 100%;
 }
@@ -55,6 +56,9 @@ img {
 
 active {
     background-color: #d47800;
+}
+#app {
+  text-align: center;
 }
 
 </style> 
