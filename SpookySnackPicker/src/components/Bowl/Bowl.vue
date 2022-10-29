@@ -2,6 +2,7 @@
   <EasyDataTable
     :headers="headers"
     :items="items"
+    class="bowl"
   />
 </template>
 
@@ -39,7 +40,7 @@ export default defineComponent({
 </script>
 
 <style>
-  .container{
+  .container {
     z-index: 0;
     box-shadow: 8px 8px rgb(0 0 0 / 0.3);
     border-style: solid;
@@ -55,11 +56,11 @@ export default defineComponent({
     width: 5em;
   }
   
-  div.vue3-easy-data-table div.vue3-easy-data-table__footer {
+  div.vue3-easy-data-table.bowl div.vue3-easy-data-table__footer {
     display: none;
   }
 
-  td:nth-of-type(3) {
+  div.vue3-easy-data-table.bowl td:nth-of-type(3) {
     color: blue;
     text-decoration-line: underline;
   }
