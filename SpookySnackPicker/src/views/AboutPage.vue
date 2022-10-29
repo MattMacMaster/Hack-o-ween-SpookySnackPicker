@@ -3,16 +3,26 @@
         <div class="aboutU">
         <h1 class="titles">About Us</h1>
         <div class="TextSec">
-            <h2>MortyAllen</h2>
+            <h3>MortyAllen</h3>
+            <p>MortyAllen Aka Matthew MacMaster is a 2nd year computer science student, with previous industry software development experience unrelated to web development and about a year of experience using React and Laravel combination for web development.</p>
             <p></p>
-            <h2>Fatboychummy</h2>
-            <p></p>
+            <h3>Fatboychummy</h3>
+            <p>Fatboychummy aka Matthew Wilbern, Matt you gotta fill this in, idk yo life. Im going to push this and leave it as is till you send it lol</p>
         </div>
     </div>
     <div class="aboutS">
         <h1 class="titles">About SpookySnack Picker</h1>
         <div class="TextSec">
-            <p></p>
+            <p>This project idea originated with inspiration from PCPartPicker, and a much needed Halloween twist.</p>            
+            <p>
+                The goal of Spookysnack Picker is to solve the much needed issue, how can I construct a trick-or-treat bowl that will
+                satisfy all the ghouls and goblins crawling around your neighborhood. Well search no more, SpookySnack Picker will solve your haunting problem
+                with candy satisfaction analysis and bowl evaluation process to let you sleep easy this hallows eve.
+            </p>
+            <p>
+                This project was created for the University of Lethbridge Halloween Hackathon, Hack-o-ween. Win or lose we wanted to get somemthing out of this event.
+                So we ended using a framework neither of us had used before Vue.js so we can walk away with learning something new.
+            </p>
         </div>
     </div>
     </div>
@@ -25,7 +35,7 @@
     .aboutU {
         text-align: center;
         float: left;
-        min-width:35%;
+        min-width:400px;
         max-width: 50%;
         background-color: rgb(63, 63, 63);
         border-color: burlywood;
@@ -36,27 +46,47 @@
     .aboutS {
         text-align: center;
         float:right;
-        min-width:35%;
-        max-width: 100%;
+        min-width:500px;
+        max-width: 45%;
         background-color: rgb(63, 63, 63);
         border-color: burlywood;
         border-radius: 5px;
         box-shadow: 8px 8px rgb(0 0 0 / 0.8);
+        padding: 0px 10px 0px 10px;
     }
     .titles {
         color: orange;
         padding: 10px 10px 10px 10px;
+        text-decoration:underline;
+    
     }
     .TextSec{
         color: coral;
         word-wrap: break-word;
         padding: 0px 10px 10px 10px;
+        font-size: larger;
     }
-@media only screen and (max-width: 980px) {  
+    p {
+        color: white;
+        padding-bottom: 10px;
+    }
+
+/* Make Smaller Screen Freindly LATER
+
+@media only screen and (max-width: 1090) {  
     .TextSec {
     color: blue;
     }
-    
+
+    .aboutU{
+        float: none;
+        position: absolute;
+    }
+    .aboutS{
+        float: none;
+        position: absolute;
+    }
 
 }
+*/
 </style>

@@ -57,11 +57,11 @@ img {
     padding: 0;
     margin: 0;
     padding-top: 5px;
+    padding-left: 5px;
     height: 4em;
     margin: 0;
     margin-right: 5px;
 }
-
 .active {
     background-color: #d47800;
 }
