@@ -1,17 +1,17 @@
 <script setup>
 import NavTop from './components/NavTop.vue'
 import NavBot from './components/NavBot.vue'
+
 </script>
 
 
 <template>
-    <header>
     <NavTop />
-    </header>
-    <main>
-    
-    </main>
-    <NavBot />
+  <div class="container">
+    <router-view></router-view>
+  </div>
+  <NavBot />
+
 </template>
 
 

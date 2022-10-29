@@ -2,8 +2,8 @@
     <div id="app">
         <ul>
             <li><a href="default.asp"><img src="./icons/candy-jar.png"></a></li>
-            <li><a id="nonimg">SpookySnack Picker</a></li>
-            <li><a id="nonimg" href="about.asp">About</a></li>
+            <li> <router-link to="/" id="nonimg">SpookySnack Picker</router-link>></li>
+            <li><router-link to="/about" id="nonimg" href="about.asp">About</router-link>></li>
         </ul>   
     </div>
 
