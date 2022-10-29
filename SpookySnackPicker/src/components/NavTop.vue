@@ -1,9 +1,10 @@
 <template>
     <div id="app">
         <ul>
-            <li><a href="default.asp"><img src="./icons/candy-jar.png"></a></li>
-            <li> <router-link to="/" id="nonimg">SpookySnack Picker</router-link>></li>
-            <li><router-link to="/about" id="nonimg" href="about.asp">About</router-link>></li>
+            <li><img src="./icons/candy-jar.png"></li>
+            <li> <router-link to="/" class="" id="nonimg">SpookySnack Picker</router-link>></li>
+            <li><router-link to="/data" id="nonimg" >Dataset</router-link>></li>
+            <li><router-link to="/about" id="nonimg" >About</router-link>></li>
         </ul>   
     </div>
 
@@ -37,6 +38,7 @@ ul li {
 
 li {
   float: left;
+  max-height: 75px;
 }
 
 li a {
@@ -54,15 +56,16 @@ li a:hover:not(.active) {
 img {
     padding: 0;
     margin: 0;
-    height: 3em;
+    padding-top: 5px;
+    height: 4em;
     margin: 0;
     margin-right: 5px;
 }
 
-active {
+.active {
     background-color: #d47800;
 }
 #nonimg {
-  margin-top: 15px;
+  margin-top: 10px;
 }
 </style> 
