@@ -7,7 +7,7 @@
             <p>MortyAllen Aka Matthew MacMaster is a 2nd year computer science student, with previous industry software development experience unrelated to web development and about a year of experience using React and Laravel combination for web development.</p>
             <p></p>
             <h3>Fatboychummy</h3>
-            <p>Fatboychummy aka Matthew Wilbern, Matt you gotta fill this in, idk yo life. Im going to push this and leave it as is till you send it lol</p>
+            <p>Fatboychummy aka Matthew Wilbern, is a 4th year computer science student who is currently working an IT job, who is in the process of learning web development.</p>
         </div>
     </div>
     <div class="aboutS">
