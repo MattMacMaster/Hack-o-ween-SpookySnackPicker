@@ -30,8 +30,10 @@ ul {
   left:0%;
   width: 100%;
   font-size: larger;
+  z-index: 1;
 }
 ul li {
+  margin-left:11%;
   display: block;
   position: relative;
 }
