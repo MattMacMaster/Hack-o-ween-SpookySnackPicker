@@ -1,0 +1,77 @@
+RAVENSCROFT v1.2; November 8, 2001
+Windows TrueType font, free for personal use
+Please include this Ravenscroft.txt file with any redistribution.
+
+HOMEPAGES:
+http://members.aol.com/disneyfonts
+http://www.tombsweettomb.com
+
+INSTALLATION: To install any TrueType font, simply copy it to your Windows\Fonts folder.
+
+<<===========>>
+
+UPDATE v1.2: Enhanced versions of the Haunted Mansion logos and "The" dingbat
+
+UPDATE v1.1: Corrected wallpaper patterns, added new "@" symbol
+
+<<===========>>
+
+Ravenscroft was inspired by the lettering used around Disney's Haunted Mansion attractions. The characters were drawn by Kronos (TombSweetTomb.com) and together we put them into a font filled with alternate letters, logos, and dingbats. 
+
+Visit TombSweetTomb.com and enter the Foyer where you'll find some other great Mansionesque fonts available for download.
+
+<<===========>>
+
+===================
+=THE CHARACTER MAP=
+===================
+-----------------
+ALTERNATE LETTERS
+-----------------
+{  =  "d" reversed serif
+}  =  "i" spiked dot
+<  =  "H" tail
+>  =  "M" descending spike
+
+The remaining special characters are entered by holding down the Alt key while typing in a 4-digit numeric code with the number pad on the right side of the keyboard.
+
+Alt+0139: "j" spiked dot
+Alt+0163: "A" no tail
+Alt+0164: "R" no tail
+Alt+0165: "N" no tail
+Alt+0166: "M" no tail
+Alt+0167: "V" tail
+Alt+0169: "h" no tail
+Alt+0170: "k" no tail
+Alt+0171: "m" no tail
+Alt+0172: "n" tail
+Alt+0181: "W" reversed
+Alt+0182: "W" bottom serifs
+Alt+0183: "W" bottom serifs, tail
+Alt+0184: "W" alternate
+--------
+DINGBATS
+--------
+Alt+0130: Servants Quarters sign
+Alt+0131: Dead End sign
+Atl+0132: Wallpaper demon (inverse)
+Alt+0134: Wallpaper top
+Alt+0135: Wallpaper bottom
+Alt+0155: Full wallpaper pattern (sideways)
+Alt+0174: "Disneyland Park" logo
+Alt+0175: "Disneyland Resort" logo
+Alt+0176: "Magic Kingdom" logo
+Alt+0177: "Walt Disney World" logo
+Alt+0178: "Tokyo Disneyland" logo
+Alt+0179: "Disneyland Paris" logo
+Alt+0187: "The"
+Alt+0188 (1/4): "The Haunted Mansion" logo
+Alt+0189 (1/2): "The Haunted Mansion" logo (inverse)
+Alt+0190 (3/4): "Phantom Manor" logo
+
+Note that some word processors (Microsoft Word, for instance) will automatically convert 1/4, 1/2, or 3/4 to the special fraction characters in the font. Thus, to type the Haunted Mansion logo, one would simply have to type 1/4.
+
+<<===========>>
+
+Comments, questions, direct them to ---> jcmagic@yahoo.com
+                                 or ---> kronos@tombsweettomb.com

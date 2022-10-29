@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="placeholder">
         <div class="aboutU">
         <h1 class="titles">About Us</h1>
         <div class="TextSec">
@@ -21,7 +21,7 @@
             </p>
             <p>
                 This project was created for the University of Lethbridge Halloween Hackathon, Hack-o-ween. Win or lose we wanted to get somemthing out of this event.
-                So we ended using a framework neither of us had used before Vue.js so we can walk away with learning something new.
+                So we ended using a framework neither of us had used before, Vue.js.So regardless of the result we can walk away with learning something new.
             </p>
         </div>
     </div>
@@ -30,8 +30,15 @@
 </template>
 
 <style scoped>
-    .container {
-    }
+@font-face {
+  font-family: NavFonts;
+  src: url(../assets/feast-of-flesh-bb/fofbb_ital.ttf);
+}
+@font-face {
+  font-family: textFonts;
+  src: url(../assets/ravenscroft/Ravenscroft.ttf);
+}
+
     .aboutU {
         text-align: center;
         float: left;
@@ -58,17 +65,23 @@
         color: orange;
         padding: 10px 10px 10px 10px;
         text-decoration:underline;
+        font-family: NavFonts;
     
     }
     .TextSec{
         color: coral;
         word-wrap: break-word;
         padding: 0px 10px 10px 10px;
-        font-size: larger;
+        font-size: x-large;
+        font-family: 'Times New Roman', Times, serif;
     }
     p {
         color: white;
         padding-bottom: 10px;
+    }
+    h3 {
+        font-family: NavFonts;
+
     }
 
 /* Make Smaller Screen Freindly LATER
