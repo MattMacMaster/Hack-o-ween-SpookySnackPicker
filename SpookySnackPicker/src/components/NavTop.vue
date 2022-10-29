@@ -30,6 +30,7 @@ ul {
   left:0%;
   width: 100%;
   font-size: larger;
+  z-index: 1;
 }
 ul li {
   display: block;
