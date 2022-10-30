@@ -1,11 +1,10 @@
 <template>
+  <p>Don't like the selection? <button id="reroll">Reroll</button></p>
   <EasyDataTable
     :headers="headers"
     :items="items"
     class="bowl"
   />
-
-  <button id="reroll">Reroll</button>
 </template>
 
 <script lang="ts">
@@ -14,27 +13,6 @@
   import { defineComponent } from 'vue';
 
   import data from '../../assets/csvjson.json';
-
-  const value_cutoffs: number[] = [30, 60, 85, 92, 97];
-
-  function getRandomInt(max: number): number {
-    return Math.floor(Math.random() * max);
-  }
-
-  // generate a value between 1 and 5, weighted.
-  function generate_length(): number {
-    let value: number = Math.random() * 100
-    let lasti: number = 0;
-
-    for (let i = 0; i < value_cutoffs.length; i++) {
-      if (value > value_cutoffs[i])
-        lasti = i;
-      else
-        return lasti + 1;
-    }
-
-    return value_cutoffs.length;
-  }
 
   export default defineComponent({
     setup() {
@@ -63,6 +41,28 @@
     },
   });
 
+  const value_cutoffs: number[] = [30, 60, 85, 92, 97];
+
+  function getRandomInt(max: number): number {
+    return Math.floor(Math.random() * max);
+  }
+
+  // generate a value between 1 and 5, weighted.
+  function generate_length(): number {
+    let value: number = Math.random() * 100
+    let lasti: number = 0;
+
+    for (let i = 0; i < value_cutoffs.length; i++) {
+      if (value > value_cutoffs[i])
+        lasti = i;
+      else
+        return lasti + 1;
+    }
+
+    return value_cutoffs.length;
+  }
+
+  // sorted data duh
   let sorted_data = {
     "Chocolate": [] as string[],
     "Fruit": [] as string[],
@@ -75,6 +75,7 @@
     "Pluribus": [] as string[]
   };
 
+  // Sort the data
   for (let i = 0; i < data.length; i++) {
     if (data[i].chocolate == "Yes") {
       sorted_data["Chocolate"].push(data[i].competitorname);
@@ -105,36 +106,57 @@
     }
   }
 
+  // This function generates all the random items.
   function generate() {
     let tds = document.getElementsByTagName("td")
     let grabbed: string[] = [] as string[];
 
+    // For each table element
     for (let i = 0; i < tds.length; i++) {
+      // Check if the element is empty (should only be the items)
       if (tds[i] != null && (tds[i].textContent == null || tds[i].textContent?.length == 0)) {
-        let randcount = generate_length();
-        let component = tds[i].parentElement.getElementsByTagName("td")[0].textContent;
-        console.log("Gen " + randcount + " for " + component);
+        let randcount = generate_length(); // amount of items to generate
+        let component = tds[i].parentElement.getElementsByTagName("td")[0].textContent; // the component we are generating for
 
+        // for each item we want to generate
         for (let j = 0; j < randcount; j++) {
           let name: string;
+          let attempts: number = 0;
+
+          // repeat until a valid generation occurs
           do {
+            // generate a random item name
             name = sorted_data[component][getRandomInt(sorted_data[component].length)];
-            console.log("Name in grabbed? " + (grabbed.includes(name)))
+            attempts++;
+
+            // if we've attempted to many times, stop.
+            if (attempts > 10) break;
           } while(grabbed.includes(name));
-          console.log("Generated: " + name);
+
+          // subsequent attempts most likely won't work either, so break out of this loop entirely.
+          if (attempts > 10) {
+            console.warn("FAILED TO GENERATE");
+            break
+          }
+          
+          // "write down" that we generated this name.
           grabbed.push(name);
 
+          // create the paragraph element to go inside the box
           let text = document.createElement("p")
           text.textContent = name;
 
+          // put it in the box
           tds[i].appendChild(text);
         }
       }
     }
   };
 
+  // Register with page load to generate items.
   document.addEventListener("DOMContentLoaded", generate, false);
 
+  // Register on reroll to generate items.
   // document.getElementById("reroll").onclick = generate;
 </script>
 
