@@ -15,6 +15,10 @@
 
   const value_cutoffs: number[] = [30, 60, 85, 92, 97];
 
+  function getRandomInt(max: number): number {
+    return Math.floor(Math.random() * max);
+  }
+
   // generate a value between 1 and 5, weighted.
   function generate_length(): number {
     let value: number = Math.random() * 100
@@ -57,15 +61,71 @@
     },
   });
 
+  let sorted_data = {
+    "Chocolate": [] as string[],
+    "Fruit": [] as string[],
+    "Caramel": [] as string[],
+    "Peanut or Almond": [] as string[],
+    "Nougat": [] as string[],
+    "Crisped Rice": [] as string[],
+    "Hard": [] as string[],
+    "Bar": [] as string[],
+    "Pluribus": [] as string[]
+  };
+
+  for (let i = 0; i < data.length; i++) {
+    if (data[i].chocolate == "Yes") {
+      sorted_data["Chocolate"].push(data[i].competitorname);
+    }
+    if (data[i].fruity == "Yes") {
+      sorted_data["Fruit"].push(data[i].competitorname);
+    }
+    if (data[i].caramel == "Yes") {
+      sorted_data["Caramel"].push(data[i].competitorname);
+    }
+    if (data[i].peanutyalmondy == "Yes") {
+      sorted_data["Peanut or Almond"].push(data[i].competitorname);
+    }
+    if (data[i].nougat == "Yes") {
+      sorted_data["Nougat"].push(data[i].competitorname);
+    }
+    if (data[i].crispedricewafer == "Yes") {
+      sorted_data["Crisped Rice"].push(data[i].competitorname);
+    }
+    if (data[i].hard == "Yes") {
+      sorted_data["Hard"].push(data[i].competitorname);
+    }
+    if (data[i].bar == "Yes") {
+      sorted_data["Bar"].push(data[i].competitorname);
+    }
+    if (data[i].pluribus == "Yes") {
+      sorted_data["Pluribus"].push(data[i].competitorname);
+    }
+  }
+
   document.addEventListener("DOMContentLoaded", function() {
     let tds = document.getElementsByTagName("td")
+    let grabbed: string[] = [] as string[];
+
     for (let i = 0; i < tds.length; i++) {
       if (tds[i] != null && (tds[i].textContent == null || tds[i].textContent?.length == 0)) {
         let randcount = generate_length();
-        let component = tds[i].parentElement?.getElementsByTagName("td")[0];
+        let component = tds[i].parentElement.getElementsByTagName("td")[0].textContent;
+        console.log("Gen " + randcount + " for " + component);
 
         for (let j = 0; j < randcount; j++) {
-          tds[i].textContent = "Your momaaaaaaaaaaaaaaaaaaaaaaaaaa";
+          let name: string;
+          do {
+            name = sorted_data[component][getRandomInt(sorted_data[component].length)];
+            console.log("Name in grabbed? " + (grabbed.includes(name)))
+          } while(grabbed.includes(name));
+          console.log("Generated: " + name);
+          grabbed.push(name);
+
+          let text = document.createElement("p")
+          text.textContent = name;
+
+          tds[i].appendChild(text);
         }
       }
     }
