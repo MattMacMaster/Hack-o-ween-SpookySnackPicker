@@ -4,6 +4,8 @@
     :items="items"
     class="bowl"
   />
+
+  <button id="reroll">Reroll</button>
 </template>
 
 <script lang="ts">
@@ -103,7 +105,7 @@
     }
   }
 
-  document.addEventListener("DOMContentLoaded", function() {
+  function generate() {
     let tds = document.getElementsByTagName("td")
     let grabbed: string[] = [] as string[];
 
@@ -129,8 +131,11 @@
         }
       }
     }
-  }, false)
+  };
 
+  document.addEventListener("DOMContentLoaded", generate, false);
+
+  // document.getElementById("reroll").onclick = generate;
 </script>
 
 <style scoped>
