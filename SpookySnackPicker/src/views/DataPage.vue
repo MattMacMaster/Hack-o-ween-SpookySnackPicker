@@ -1,17 +1,19 @@
 <template>
-
-  <span>Search: </span>
-  <input type="text" v-model="searchValue" />
-
   <div class="container">
-    <EasyDataTable
-    :headers="headers"
-    :items="items"
-    :dense="dense"
-    :search-value="searchValue"
-    :theme-color="themeColor"
-  />
+    <span>Search: </span>
+    <input type="text" v-model="searchValue" />
+
+    <div>
+      <EasyDataTable
+      :headers="headers"
+      :items="items"
+      :dense="dense"
+      :search-value="searchValue"
+      :theme-color="themeColor"
+    />
+    </div>
   </div>
+
 
 </template>
 
@@ -76,6 +78,7 @@ export default defineComponent({
     box-shadow: 8px 8px rgb(0 0 0 / 0.3);
     border-style: solid;
     border-color: black;
+    background-color:white;
   }
   span {
     font-weight: bolder;

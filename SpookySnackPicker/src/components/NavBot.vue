@@ -14,9 +14,14 @@
 </script>
     
 <style lang="css">
+@font-face {
+  font-family: NavFonts;
+  src: url(../assets/feast-of-flesh-bb/fofbb_ital.ttf);
+}
 
   footer{
-    font-size: larger;
+    font-size: xx-large;
+    font-family: NavFonts;
     position: absolute;
     bottom: 0;
     left: 0;
