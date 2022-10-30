@@ -52,4 +52,4 @@ For example, we can search "M&Ms" and get all of the results for that.
 
 # SPOOKYSNACK PICKER page
 
-That is all we have for you,
+That is all we have for you, thank you for for your time and for hosting this!
