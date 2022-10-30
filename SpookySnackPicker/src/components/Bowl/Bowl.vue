@@ -164,6 +164,27 @@
 
     // Register on reroll to generate items.
     document.getElementById("reroll").addEventListener("click", generate);
+
+    var oldHref = document.location.href;
+
+    var bodyList = document.querySelector("body")
+
+    var observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+            if (oldHref != document.location.href) {
+                oldHref = document.location.href;
+                generate();
+                document.getElementById("reroll").addEventListener("click", generate);
+            }
+        });
+    });
+    
+    var config = {
+        childList: true,
+        subtree: true
+    };
+    
+    observer.observe(bodyList, config);
   };
 </script>
 
