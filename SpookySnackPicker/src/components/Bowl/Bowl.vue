@@ -1,5 +1,5 @@
 <template>
-  <p>Don't like the selection? <button id="reroll">Reroll</button></p>
+  <button id="reroll">Generate New Bowl</button>
   <EasyDataTable
     :headers="headers"
     :items="items"
@@ -189,6 +189,10 @@
 </script>
 
 <style scoped>
+@font-face {
+  font-family: NavFonts;
+  src: url(../assets/feast-of-flesh-bb/fofbb_ital.ttf);
+}
   .vue3-easy-data-table.bowl {
     z-index: 0;
     box-shadow: 8px 8px rgb(0 0 0 / 0.3);
@@ -207,5 +211,24 @@
 
   .header-text {
     font-weight: bold;
+  }
+  button {
+    background-color: #d47800c4; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 42%;
+  margin-bottom: 15px;
+  border: solid;
+  border-color: black;
+  color: black;
+  font-family: NavFonts;
+  }
+  button:hover{
+    box-shadow: 4px 4px rgb(0 0 0 / 0.3);
   }
 </style>
